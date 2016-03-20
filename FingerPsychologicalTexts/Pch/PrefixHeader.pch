@@ -1,0 +1,37 @@
+//
+//  PrefixHeader.pch
+//  FingerPsychologicalTexts
+//
+//  Created by scjy on 16/3/4.
+//  Copyright © 2016年 秦俊珍. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define kWidth [UIScreen mainScreen].bounds.size.width
+#define kHeight [UIScreen mainScreen].bounds.size.height
+
+
+
+
+
+#ifdef DEBUG
+#	define QJZLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#	define QJZLog(...)
+#endif
+
+#define MainColor [UIColor colorWithRed:17.0/225.0 green:196/255.0 blue:203/255.0 alpha:1.0]
+
+
+
+
+
+
+
+#endif /* PrefixHeader_pch */
